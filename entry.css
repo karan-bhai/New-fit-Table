@@ -1,0 +1,118 @@
+.entry-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+
+.input-data{
+    width: 70%;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    flex-direction: column;
+    margin-bottom: 100px;
+}
+.input-data table{
+    margin-top: 80px;
+    border-collapse: collapse;
+    /* width: 100%; */
+}
+.input-data table tr th{
+    width: 150px;
+    border: 1px 1px 1px solid #fff;
+}
+.input-data table tr td input,
+select{
+    height: 100%;
+    width: 150px;
+    text-align: center;
+    font-size: 25px;
+    border: 1px solid;
+    outline: none;
+}
+
+.result-table {
+    display: flex;
+    justify-content: center;
+    width: 90%;
+    margin-bottom: 20vh;
+}
+.result-table table{
+    width: 90%;
+    border-collapse: collapse;
+}
+.result-table table th{
+    border: 1px solid #fff;
+}
+
+.result-table table tr td{
+    border: 2px solid #b3b3b3;
+}
+
+.btnsection{
+    width: 30%;
+    margin: 50px 0;
+    display: flex;  
+    align-items: center;
+    justify-content: center;
+}
+
+.btnsection input{
+    height: 50px;
+    width: 100%;
+    font-size: 1.3rem;
+    background: #1b3d57;
+    color: #fff;
+    font-weight: 900;
+    border: none;
+    outline: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-style: italic;
+}
+
+@media(max-width:500px){
+
+    .input-data{
+        width: 99%;
+        padding: 1px;
+    }
+.input-data table tr th{
+    width: 70px;
+    /* font-size: 1rem; */
+}
+    .input-data table tr td input,
+select{
+    width: 78px;
+}
+
+.result-table{
+    width: 100%;
+}
+
+.result-table table{
+    width: 100%;
+}
+.result-table table tr th{
+    font-size: 16px;
+}
+.result-table table tr td{
+    font-size: 12px;
+}
+.btnsection {
+    width: 80%;
+    margin: 20px 0;
+}
+.btnsection input{
+    border: 1px solid #fff;
+}
+#wkt{
+    width: 130px;
+}
+#rM,#rN{
+    width: 50px;
+}
+
+}

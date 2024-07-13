@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Delete Panel</title>
+
+    <style>
+    *{
+    padding: 0;
+    margin: 0;
+    font-family: 'poppins',sans-serif;
+    box-sizing: border-box;
+    }
+    body{
+        background: rgb(0, 158, 250);
+    }
+    .container{
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        align-items: start;
+        justify-content: center;
+    }
+    .container button{
+         height: 50px;  
+         width: 200px;
+         margin-top: 50%;
+         font-size: 20px;
+         font-weight: 900;
+         background: rgb(253, 87, 87);
+         border: none;
+         outline: none;
+         color: #fff;
+         border-radius: 5px;
+    }
+    </style>
+
+</head>
+
+<body>
+    <div class="container">
+        <button id="btn"> Delete All Data</button>
+    </div>
+</body>
+<script>
+ let button = document.getElementById("btn");
+ button.addEventListener("click",clear=()=>{
+
+    let text = "Are You Sure To Delete Data?"
+
+       if (confirm(text)==true) {
+            localStorage.clear();
+            alert("Data Cleared Successfully!")
+       }else{
+        alert("Data Remain Save");
+       }
+
+ })
+
+</script>
+</html>
