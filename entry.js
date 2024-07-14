@@ -64,7 +64,7 @@ document.addEventListener('DOMContentLoaded', function () {
             row.insertCell(4).textContent = entry.N;
             row.insertCell(5).textContent = entry.WOT;
             row.insertCell(6).textContent = entry.WKT;
-            alert("Data Added Sucessfuly!");
+            // alert("Data Added Sucessfuly!");
         });
     }
 
